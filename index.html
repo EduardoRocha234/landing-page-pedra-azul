@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<!-- Title -->
+		<title>Pedra Azul Turismo</title>
+
+		<!-- StyleSheets -->
+		<link
+			rel="stylesheet"
+			href="./styles/main.css"
+		/>
+
+		<!-- CDN Tailwindcss -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Configuração TW -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						backgroundImage: {
+							hero: "url('./img/Pedra_Azul.jpg')",
+						},
+					},
+				},
+			}
+		</script>
+	</head>
+	<body>
+		<div
+			class="h-screen w-full bg-[url('./img/pedra-azul-e-pedra-do-lagarto.jpg')] bg-no-repeat bg-cover bg-center"
+		>
+			<header
+				class="px-40 w-full -mt-2 flex justify-between items-center text-lg bg-transparent bg-gradient-to-t from-transparent to-gray-600"
+			>
+				<img
+					src="./img/Pedra Azul Logo.png"
+					alt="Logo"
+					class="h-40 w-2h-40 m-0 fill-white"
+				/>
+				<nav>
+					<ul
+						class="flex justify-around items-center gap-7 font-semibold text-white *:transition-colors"
+					>
+						<li class="hover:text-slate-300"><a href="#home">Home</a></li>
+						<li class="hover:text-slate-300"><a href="#about">Sobre</a></li>
+						<li class="hover:text-slate-300">
+							<a href="#services">Serviços</a>
+						</li>
+						<li class="hover:text-slate-300">
+							<a href="#contact">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class="w-full h-full pt-52">
+				<div
+					class="flex flex-col justify-start items-start gap-10 px-44 w-full"
+				>
+					<h1 class="text-8xl text-white font-bold">BEM-VINDO A PEDRA AZUL</h1>
+					<h class="text-white text-xl w-6/12"
+						>Pedra Azul é um oásis de tranquilidade, de relaxamento e
+						contemplação em meio ao canto dos pássaros e à natureza exuberante,
+						com seus tapetes verdes e árvores floreiras!</h
+					>
+					<button
+						class="text-white border w-56 border-white px-5 py-2 rounded-full backdrop-blur-sm hover:backdrop-blur-lg transition-all"
+					>
+						Reservar uma Visita
+					</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
