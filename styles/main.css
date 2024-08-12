@@ -8,3 +8,17 @@
 	list-style: none;
 	text-decoration: none;
 }
+
+.vertical-line {
+	width: 0.25rem;
+	height: 70rem;
+	background: linear-gradient(
+		to bottom,
+		transparent 0%,
+		white,
+		transparent 100%
+	);
+	/* margin: 50px auto; */
+	position: absolute;
+	left: 50% ;
+}

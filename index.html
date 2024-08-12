@@ -34,49 +34,268 @@
 		</script>
 	</head>
 	<body>
-		<div
-			class="h-screen w-full bg-[url('./img/pedra-azul-e-pedra-do-lagarto.jpg')] bg-no-repeat bg-cover bg-center"
-		>
-			<header
-				class="px-40 w-full -mt-2 flex justify-between items-center text-lg bg-transparent bg-gradient-to-t from-transparent to-gray-600"
+		<main>
+			<div
+				class="h-screen w-full bg-[url('./img/pedra-azul-e-pedra-do-lagarto.jpg')] bg-no-repeat bg-cover bg-center"
 			>
-				<img
-					src="./img/Pedra Azul Logo.png"
-					alt="Logo"
-					class="h-40 w-2h-40 m-0 fill-white"
-				/>
-				<nav>
-					<ul
-						class="flex justify-around items-center gap-7 font-semibold text-white *:transition-colors"
-					>
-						<li class="hover:text-slate-300"><a href="#home">Home</a></li>
-						<li class="hover:text-slate-300"><a href="#about">Sobre</a></li>
-						<li class="hover:text-slate-300">
-							<a href="#services">Serviços</a>
-						</li>
-						<li class="hover:text-slate-300">
-							<a href="#contact">Contato</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<section class="w-full h-full pt-52">
-				<div
-					class="flex flex-col justify-start items-start gap-10 px-44 w-full"
+				<header
+					class="px-40 w-full -mt-2 flex justify-between items-center text-lg bg-transparent bg-gradient-to-t from-transparent to-gray-600"
 				>
-					<h1 class="text-8xl text-white font-bold">BEM-VINDO A PEDRA AZUL</h1>
-					<h class="text-white text-xl w-6/12"
-						>Pedra Azul é um oásis de tranquilidade, de relaxamento e
-						contemplação em meio ao canto dos pássaros e à natureza exuberante,
-						com seus tapetes verdes e árvores floreiras!</h
+					<img
+						src="./img/Pedra Azul Logo.png"
+						alt="Logo"
+						class="h-40 w-2h-40 m-0 fill-white"
+					/>
+					<nav>
+						<ul
+							class="flex justify-around items-center gap-7 font-semibold text-white *:transition-colors"
+						>
+							<li class="hover:text-slate-300"><a href="#home">Home</a></li>
+							<li class="hover:text-slate-300"><a href="#about">Sobre</a></li>
+							<li class="hover:text-slate-300">
+								<a href="#services">Serviços</a>
+							</li>
+							<li class="hover:text-slate-300">
+								<a href="#contact">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<section
+					id="initial-section"
+					class="w-full h-full pt-52 bg-gradient-to-b from-transparent to-black px-44"
+				>
+					<div class="flex flex-col justify-start items-start gap-10 w-full">
+						<h1 class="text-8xl text-white font-bold">
+							BEM-VINDO A PEDRA AZUL
+						</h1>
+						<h class="text-white text-xl w-6/12"
+							>Pedra Azul é um oásis de tranquilidade, de relaxamento e
+							contemplação em meio ao canto dos pássaros e à natureza
+							exuberante, com seus tapetes verdes e árvores floreiras!</h
+						>
+						<button
+							class="text-white border w-56 border-white px-5 py-2 rounded-full backdrop-blur-sm hover:backdrop-blur-lg transition-all"
+						>
+							Reservar uma Visita
+						</button>
+					</div>
+				</section>
+				<section
+					id="intro-section"
+					class="w-full h-full -mt-40 bg-gradient-to-t from-slate-900 to-black pl-44 pt-2 -pb-40"
+				>
+					<div class="flex w-full justify-between">
+						<div class="flex flex-col gap-7">
+							<h2 class="text-white text-6xl font-semibold">VENHA CONHECER</h2>
+							<p class="text-white text-lg w-7/12 font-light ml-20 mt-10">
+								Pedra Azul é uma região de belezas naturais mágicas, possui um
+								dos 3 melhores climas do mundo e é a segunda maior cobertura da
+								Mata Atlântica do país. Tem como principal símbolo e cartão
+								postal a Pedra Azul, uma formação de granito e gnaisse de 1.822
+								m de altitude que adquire coloração azul e esverdeada conforme a
+								incidência da luz solar.
+							</p>
+						</div>
+						<div clas="w-full h-full ">
+							<img
+								src="./img/Pedra Azul 2.jpg"
+								alt="Imagem da Pedra Azul"
+								class="h-[22rem] w-[130rem] object-cover border-2 border-r-0 border-white rounded-md rounded-r-none"
+							/>
+						</div>
+					</div>
+				</section>
+				<section class="relative w-full bg-slate-900 px-48">
+					<img
+						src="./img/parapente.png"
+						alt="PNJ Parapente"
+						class="absolute -top-96 -left-40 size-[40rem]"
+					/>
+					<div
+						class="flex flex-col items-center justify-center gap-4 w-full h-full text-white"
 					>
-					<button
-						class="text-white border w-56 border-white px-5 py-2 rounded-full backdrop-blur-sm hover:backdrop-blur-lg transition-all"
-					>
-						Reservar uma Visita
-					</button>
-				</div>
-			</section>
-		</div>
+						<span>MAIS POPULARES </span>
+						<h1 class="text-4xl font-semibold">
+							OS MELHORES PONTOS TURÍSTICOS PARA VOCÊ CONHECER
+						</h1>
+						<div class="mt-[9rem] w-full h-full">
+							<div clas="relative">
+								<div
+									class="w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[68%]"
+								></div>
+								<div
+									class="w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[40%]"
+								></div>
+								<div
+									class="w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[10%]"
+								></div>
+								<div class="vertical-line ml-2"></div>
+							</div>
+							<div class="flex flex-col gap-20 w-full">
+								<div
+									class="flex items-center justify-between text-white w-full"
+								>
+									<div class="flex flex-col gap-2">
+										<h2 class="text-xl font-semibold">
+											Muitos Esportes e Esportes de Aventura.
+										</h2>
+										<p class="text-lg w-6/12">
+											Pedra Azul e entorno têm vocação natural para esportes, em
+											especial esportes de aventura. Trilhas, corridas, rapel,
+											escaladas, alpinismo, parapente, bike, motos, cavalgadas,
+											canoagem, golfe. Alguns dos principais eventos esportivos
+											nacionais têm sido realizados na região.
+										</p>
+									</div>
+									<img
+										src="./img/parapente 2.jpg"
+										alt="Imagem de Esportes"
+										class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
+									/>
+								</div>
+								<div
+									class="flex items-center gap-[35rem] justify-between text-white w-full"
+								>
+									<img
+										src="./img/Vinhos.jpg"
+										alt="Imagem de Esportes"
+										class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
+									/>
+									<div class="flex flex-col gap-2">
+										<h2 class="text-xl font-semibold">
+											Pedra Azul é Convite Permanente para Uma Taça de Vinho.
+										</h2>
+										<p class="text-lg">
+											A temperatura sempre amena e muito fria no inverno é um
+											convite permanente para celebração da vida e tomar vinho
+											com os amigos. Rosso, encarnado, sangre, rubro, tinto.
+											Vinhos alegram a alma. Alguns celebram e brindam a
+											amizade. Convites ao romance estão sempre no ar. Os 5
+											sentidos mais uma vez aplaudem de pé.
+										</p>
+									</div>
+								</div>
+								<div
+									class="flex items-center justify-between text-white w-full"
+								>
+									<div class="flex flex-col gap-2">
+										<h2 class="text-xl font-semibold">
+											Agroturismo. Centenas de Propriedades Familiares Rurais.
+										</h2>
+										<p class="text-lg w-6/12">
+											O agroturismo na Região de Pedra Azul, Venda Nova do
+											Imigrante e entorno é diversificado e inovador. Venda Nova
+											do Imigrante é a Capital Nacional do Agroturismo.
+											Embutidos, queijos especiais, pastas, mel, palmitos,
+											geleias, caponatas, pães, doces, bolos, morangos,
+											orgânicos, aguardentes, cervejas. O acesso a estas
+											propriedades é permitido aos turistas. Aqui você ainda
+											vive uma experiência única de contato com o modus vivendi
+											rural.
+										</p>
+									</div>
+									<img
+										src="./img/Alimentos.jpg"
+										alt="Imagem de Esportes"
+										class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="relative w-full bg-slate-900 px-48 text-white pt-48">
+					<div class="flex flex-col gap-4">
+						<h3 class="text-sm ml-28">O QUE FAZER ?</h3>
+						<h1 class="text-4xl font-semibold">
+							OS LUGARES QUE OS VISITANTES MAIS AMAM!
+						</h1>
+					</div>
+					<div class="mt-12 flex justify-center gap-16">
+						<div
+							class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						>
+							<div
+								class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
+							>
+								<div class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block">
+									Ver Detalhes
+								</div>
+							</div>
+							<img
+								src="./img/Parque-estadual.jpg"
+								class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
+							/>
+							<div class="absolute bottom-7 w-full flex justify-center">
+								<span class="font-bold text-lg backdrop-blur-sm px-3 rounded-xl"
+									>PARQUE ESTADUAL</span
+								>
+							</div>
+						</div>
+						<div
+							class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						>
+							<div
+								class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
+							>
+								<div class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block">
+									Ver Detalhes
+								</div>
+							</div>
+							<img
+								src="./img/Gruta-do-limoeiro.jpg"
+								class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
+							/>
+							<div class="absolute bottom-7 w-full flex justify-center">
+								<span class="font-bold text-lg backdrop-blur-sm px-3 rounded-xl"
+									>GRUTA DO LIMOEIRO</span
+								>
+							</div>
+						</div>
+						<div
+							class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						>
+							<div
+								class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
+							>
+								<div class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block">
+									Ver Detalhes
+								</div>
+							</div>
+							<img
+								src="./img/Zoo-Park.jpg"
+								class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
+							/>
+							<div class="absolute bottom-7 w-full flex justify-center">
+								<span class="font-bold text-lg backdrop-blur-sm px-3 rounded-xl"
+									>ZOO PARK DA MONTANHA</span
+								>
+							</div>
+						</div>
+						<div
+							class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						>
+							<div
+								class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
+							>
+								<div class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block">
+									Ver Detalhes
+								</div>
+							</div>
+							<img
+								src="./img/Rota-do_lagarto.jpg"
+								class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
+							/>
+							<div class="absolute bottom-7 w-full flex justify-center">
+								<span class="font-bold text-lg backdrop-blur-sm px-3 rounded-xl"
+									>ROTA DO LAGARTO</span
+								>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
 	</body>
 </html>
