@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 	<head>
 		<!-- Meta -->
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Para Pessoas que gostam de um lugar aconchegante e coberto por natureza Pedra Azul é seu próximo destino para conhecer, venha conhecer um pouquinho de Pedra Azul neste site!"
 		/>
 
 		<!-- Titulo -->
@@ -16,9 +20,6 @@
 			rel="stylesheet"
 			href="./styles/main.css"
 		/>
-
-		<!-- CDN Tailwindcss -->
-		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<body>
 		<div
@@ -29,7 +30,7 @@
 			>
 				<div>
 					<img
-						src="./img/Pedra Azul Logo.png"
+						src="./img/pedra-azul-logo.png"
 						alt="Logo"
 						class="h-40"
 					/>
@@ -50,7 +51,7 @@
 				</nav>
 			</header>
 			<section
-				id="initial-section"
+				id="home"
 				class="w-full h-full pt-52 bg-gradient-to-b from-transparent to-black px-44"
 			>
 				<div class="flex flex-col justify-start items-start gap-10 w-full">
@@ -61,6 +62,7 @@
 						com seus tapetes verdes e árvores floreiras!</h
 					>
 					<button
+						aria-label="Reservar"
 						class="text-white border w-56 border-white px-5 py-2 rounded-full backdrop-blur-sm hover:backdrop-blur-lg transition-all"
 					>
 						Reservar uma Visita
@@ -68,11 +70,11 @@
 				</div>
 			</section>
 			<section
-				id="intro-section"
+				id="intro"
 				class="w-full h-full -mt-40 bg-gradient-to-t from-slate-900 to-black pl-44 pt-2 -pb-40"
 			>
 				<div class="flex w-full justify-between">
-					<div class="flex flex-col gap-7">
+					<asid class="flex flex-col gap-7">
 						<h2 class="text-white text-6xl font-semibold">VENHA CONHECER</h2>
 						<p class="text-white text-lg w-7/12 font-light ml-20 mt-10">
 							Pedra Azul é uma região de belezas naturais mágicas, possui um dos
@@ -82,14 +84,14 @@
 							altitude que adquire coloração azul e esverdeada conforme a
 							incidência da luz solar.
 						</p>
-					</div>
-					<div clas="w-full h-full ">
+					</asid>
+					<aside clas="w-full h-full ">
 						<img
-							src="./img/Pedra Azul 2.jpg"
+							src="./img/pedra-azul-2.jpg"
 							alt="Imagem da Pedra Azul"
 							class="h-[22rem] w-[130rem] object-cover border-2 border-r-0 border-white rounded-md rounded-r-none"
 						/>
-					</div>
+					</aside>
 				</div>
 			</section>
 			<section class="relative w-full bg-slate-900 px-48">
@@ -124,7 +126,7 @@
 						</div>
 						<div class="flex flex-col gap-20 w-full">
 							<div class="flex items-center justify-between text-white w-full">
-								<div class="flex flex-col gap-2">
+								<aside class="flex flex-col gap-2">
 									<h2 class="text-xl font-semibold">
 										Muitos Esportes e Esportes de Aventura.
 									</h2>
@@ -135,10 +137,10 @@
 										canoagem, golfe. Alguns dos principais eventos esportivos
 										nacionais têm sido realizados na região.
 									</p>
-								</div>
+								</aside>
 								<img
-									src="./img/parapente 2.jpg"
-									alt="Imagem de Esportes"
+									src="./img/parapente-coletivo.jpg"
+									alt="Imagem de pessoas praticando parapente"
 									class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
 								/>
 							</div>
@@ -150,7 +152,7 @@
 									alt="Imagem de Esportes"
 									class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
 								/>
-								<div class="flex flex-col gap-2">
+								<aside class="flex flex-col gap-2">
 									<h2 class="text-xl font-semibold">
 										Pedra Azul é Convite Permanente para Uma Taça de Vinho.
 									</h2>
@@ -162,10 +164,10 @@
 										Convites ao romance estão sempre no ar. Os 5 sentidos mais
 										uma vez aplaudem de pé.
 									</p>
-								</div>
+								</aside>
 							</div>
 							<div class="flex items-center justify-between text-white w-full">
-								<div class="flex flex-col gap-2">
+								<aside class="flex flex-col gap-2">
 									<h2 class="text-xl font-semibold">
 										Agroturismo. Centenas de Propriedades Familiares Rurais.
 									</h2>
@@ -179,10 +181,10 @@
 										permitido aos turistas. Aqui você ainda vive uma experiência
 										única de contato com o modus vivendi rural.
 									</p>
-								</div>
+								</aside>
 								<img
-									src="./img/Alimentos.jpg"
-									alt="Imagem de Esportes"
+									src="./img/alimentos.jpg"
+									alt="Imagem de Alimentos do Naturais"
 									class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
 								/>
 							</div>
@@ -199,6 +201,7 @@
 				</div>
 				<div class="mt-16 flex justify-center items-center gap-16">
 					<button
+						aria-label="Fotos à esquerda"
 						class="cursor-pointer border-0 hover:border rounded-full p-0 transition-all"
 					>
 						<svg
@@ -221,14 +224,16 @@
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
 						>
-							<div
+							<button
+								aria-label="Detalhes"
 								class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block"
 							>
 								Ver Detalhes
-							</div>
+							</button>
 						</div>
 						<img
-							src="./img/Parque-estadual.jpg"
+							src="./img/parque-estadual.jpg"
+							alt="Foto do Parque Estadual"
 							class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
 						/>
 						<div class="absolute bottom-7 w-full flex justify-center">
@@ -243,14 +248,16 @@
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
 						>
-							<div
+							<button
+								aria-label="Detalhes"
 								class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block"
 							>
 								Ver Detalhes
-							</div>
+							</button>
 						</div>
 						<img
-							src="./img/Gruta-do-limoeiro.jpg"
+							src="./img/gruta-do-limoeiro.jpg"
+							alt="Foto da Gruta do Limoeiro"
 							class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
 						/>
 						<div class="absolute bottom-7 w-full flex justify-center">
@@ -265,14 +272,16 @@
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
 						>
-							<div
+							<button
+								aria-label="Detalhes"
 								class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block"
 							>
 								Ver Detalhes
-							</div>
+							</button>
 						</div>
 						<img
-							src="./img/Zoo-Park.jpg"
+							src="./img/zoo-park-da-montanha.jpg"
+							alt=" foto Zoo Park da Montanha"
 							class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
 						/>
 						<div class="absolute bottom-7 w-full flex justify-center">
@@ -287,14 +296,16 @@
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
 						>
-							<div
+							<button
+								aria-label="Detalhes"
 								class="bg-white hover:bg-slate-100 rounded-lg text-slate-800 px-3 py-2 hidden group-hover:block"
 							>
 								Ver Detalhes
-							</div>
+							</button>
 						</div>
 						<img
-							src="./img/Rota-do_lagarto.jpg"
+							src="./img/rota-do-lagarto.jpg"
+							alt="Imagem da Rota do Lagarto"
 							class="w-full h-full object-cover rounded-lg hover:backdrop-sepia-0"
 						/>
 						<div class="absolute bottom-7 w-full flex justify-center">
@@ -304,6 +315,7 @@
 						</div>
 					</div>
 					<button
+						aria-label="Fotos à direita"
 						class="cursor-pointer border-0 hover:border rounded-full p-0 transition-all"
 					>
 						<svg
@@ -323,7 +335,7 @@
 				</div>
 			</section>
 			<section
-				id="gallery-section"
+				id="gallery"
 				class="relative w-full bg-slate-900 px-52 text-white pt-48"
 			>
 				<div
@@ -357,13 +369,14 @@
 							<span class="text-2xl font-semibold">Piscinas Naturais</span>
 						</div>
 						<div
-							class="w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Pedra_Azul_Milky_Way.jpg')] bg-cover bg-right hover:bg-left transition-all"
+							class="w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/pedra-azul-noite-estrelada.jpg')] bg-cover bg-right hover:bg-left transition-all"
 						>
 							<span class="text-2xl font-semibold">Noite de Pedra Azul</span>
 						</div>
 					</div>
 					<div class="mt-10">
 						<button
+							aria-label="Ver mais fotos"
 							class="bg-blue-950 hover:bg-blue-900 px-7 py-3 rounded-full transition-colors"
 						>
 							Ver mais fotos
@@ -372,7 +385,7 @@
 				</div>
 			</section>
 			<section
-				id="impressions-section"
+				id="impressions"
 				class="relative w-full bg-slate-900 px-40 text-white pt-48 pb-20"
 			>
 				<div class="flex flex-col gap-4">
@@ -458,8 +471,8 @@
 						<div class="flex gap-10">
 							<div class="w-16 h-16 rounded-full">
 								<img
-									src="img/Jackie.jpg"
-									alt="Perfil do usuario"
+									src="img/jackie-chan-foto.jpg"
+									alt="foto [erfil do usuario"
 									class="object-cover w-full h-full rounded-full"
 								/>
 							</div>
@@ -547,7 +560,7 @@
 						<div class="flex gap-10">
 							<div class="w-16 h-16 rounded-full">
 								<img
-									src="img/Default-profile.jpg"
+									src="img/foto-padrao-de-perfil.jpg"
 									alt="Perfil do usuario"
 									class="object-cover w-full h-full rounded-full"
 								/>
@@ -636,7 +649,7 @@
 						<div class="flex gap-10">
 							<div class="w-16 h-16 rounded-full">
 								<img
-									src="img/MJ-the-goat.jpg"
+									src="img/michael-jackson-foto.jpg"
 									alt="Perfil do usuario"
 									class="object-cover w-full h-full rounded-full"
 								/>
@@ -655,6 +668,7 @@
 				<div class="mt-20 flex w-full justify-center items-center">
 					<div class="flex gap-10">
 						<button
+							aria-label="carregar impressões esquerda"
 							class="cursor-pointer border hover:bg-slate-600 rounded-full p-0 transition-all"
 						>
 							<svg
@@ -672,6 +686,7 @@
 							</svg>
 						</button>
 						<button
+							aria-label="carregar impressões direita"
 							class="cursor-pointer border hover:bg-slate-600 rounded-full p-0 transition-all"
 						>
 							<svg
@@ -692,7 +707,7 @@
 				</div>
 			</section>
 			<section
-				id="contact-section"
+				id="contact"
 				class="relative w-full h-full bg-slate-900 text-white bg-[url('./img/Pedra-Azul-4.jpeg')] bg-no-repeat bg-cover bg-center"
 			>
 				<div
@@ -719,6 +734,7 @@
 								class="transition-all appearance-none outline-none focus:outline-white text-slate-900 bg-white w-full py-3 px-5 rounded-lg"
 							/>
 							<button
+								aria-label="Enviar"
 								type="submit"
 								class="text-white text-lg border w-full border-white px-5 py-3 rounded-lg backdrop-blur-sm hover:backdrop-blur-lg transition-all"
 							>
@@ -733,7 +749,7 @@
 			>
 				<div>
 					<img
-						src="./img/Pedra Azul Logo.png"
+						src="./img/pedra-azul-logo.png"
 						alt="Logo"
 						class="size-30"
 					/>
@@ -824,7 +840,7 @@
 						</a>
 						<!-- Facebook icone -->
 						<a
-							href="http://"
+							href="https://facebook.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -851,7 +867,7 @@
 						</a>
 						<!-- Twitter icone -->
 						<a
-							href="http://"
+							href="https://x.com"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -883,14 +899,17 @@
 				</div>
 				<div class="flex flex-col gap-8 w-full">
 					<div class="text-2xl">MENU</div>
-					<a href="">Home</a>
-					<a href="">Sobre</a>
-					<a href="">O que fazer</a>
-					<a href="">Impressões</a>
+					<a href="#home">Home</a>
+					<a href="#about">Sobre</a>
+					<a href="#todo">O que fazer</a>
+					<a href="#impressions">Impressões</a>
 				</div>
 				<div></div>
 				<div></div>
 			</footer>
 		</div>
+
+		<!-- CDN Tailwindcss -->
+		<script src="https://cdn.tailwindcss.com"></script>
 	</body>
 </html>
