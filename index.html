@@ -20,6 +20,8 @@
 			rel="stylesheet"
 			href="./styles/main.css"
 		/>
+
+		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<body>
 		<div
@@ -52,11 +54,15 @@
 			</header>
 			<section
 				id="home"
-				class="w-full h-full pt-52 bg-gradient-to-b from-transparent to-black px-44"
+				class="w-full h-full pt-20 xl:pt-32 2xl:pt-44 bg-gradient-to-b from-transparent to-black px-20 md:px-44 transition-all"
 			>
 				<div class="flex flex-col justify-start items-start gap-10 w-full">
-					<h1 class="text-8xl text-white font-bold">BEM-VINDO A PEDRA AZUL</h1>
-					<h class="text-white text-xl w-6/12"
+					<h1
+						class="text-xl md:text-4xl xl:text-5xl 2xl:text-8xl text-white font-bold"
+					>
+						BEM-VINDO A PEDRA AZUL
+					</h1>
+					<h class="text-white text-lg md:text-xl xl:w-6/12"
 						>Pedra Azul é um oásis de tranquilidade, de relaxamento e
 						contemplação em meio ao canto dos pássaros e à natureza exuberante,
 						com seus tapetes verdes e árvores floreiras!</h
@@ -71,12 +77,20 @@
 			</section>
 			<section
 				id="intro"
-				class="w-full h-full -mt-40 bg-gradient-to-t from-slate-900 to-black pl-44 pt-2 -pb-40"
+				class="w-full h-full -mt-40 bg-gradient-to-t from-slate-900 to-black px-28 md:pr-0 md:pl-28 lg:pl-44 pt-8 2xl:pt-2 -pb-40 transition-all"
 			>
-				<div class="flex w-full justify-between">
-					<asid class="flex flex-col gap-7">
-						<h2 class="text-white text-6xl font-semibold">VENHA CONHECER</h2>
-						<p class="text-white text-lg w-7/12 font-light ml-20 mt-10">
+				<div
+					class="flex-col flex md:flex-row w-full justify-between items-center gap-6"
+				>
+					<aside class="flex flex-col gap-2 lg:gap-7">
+						<h2
+							class="text-white text-xl md:text-2xl lg:text-4xl 2xl:text-6xl font-semibold"
+						>
+							VENHA CONHECER
+						</h2>
+						<p
+							class="text-white text-center md:text-left md:text-lg lg:w-7/12 font-light lg:ml-20 mt-10"
+						>
 							Pedra Azul é uma região de belezas naturais mágicas, possui um dos
 							3 melhores climas do mundo e é a segunda maior cobertura da Mata
 							Atlântica do país. Tem como principal símbolo e cartão postal a
@@ -84,22 +98,24 @@
 							altitude que adquire coloração azul e esverdeada conforme a
 							incidência da luz solar.
 						</p>
-					</asid>
-					<aside clas="w-full h-full ">
+					</aside>
+					<aside clas="w-full h-full">
 						<img
 							src="./img/pedra-azul-2.jpg"
 							alt="Imagem da Pedra Azul"
-							class="h-[22rem] w-[130rem] object-cover border-2 border-r-0 border-white rounded-md rounded-r-none"
+							class="h-[15rem] md:h-[22rem] w-[130rem] object-cover border-2 md:border-r-0 border-white rounded-md md:rounded-r-none"
 						/>
 					</aside>
 				</div>
 			</section>
-			<section class="relative w-full bg-slate-900 px-48">
+			<section
+				class="relative w-full bg-slate-900 px-16 md:px-28 lg:px-32 xl:px-44 2xl:px-48 transition-all"
+			>
 				<div>
 					<img
 						src="./img/parapente.png"
 						alt="PNJ Parapente"
-						class="absolute -top-96 -left-40 size-[40rem]"
+						class="absolute hidden md:block -left-28 md:-top-20 lg:-top-28 xl:-top-40 xl:-left-32 2xl:-top-96 2xl:-left-40 size-[20rem] lg:size-[20rem] xl:size-[27rem] 2xl:size-[40rem]"
 					/>
 				</div>
 				<div
@@ -107,30 +123,36 @@
 				>
 					<div class="flex flex-col items-center gap-4">
 						<span>UM LUXO SENSORIAL </span>
-						<h1 class="text-4xl font-semibold">
+						<h1
+							class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold"
+						>
 							RESPIRE FUNDO! PREPARE SEU CORAÇÃO!
 						</h1>
 					</div>
-					<div class="mt-[9rem] w-full h-full">
+					<div class="mt-10 md:mt-[9rem] w-full h-full">
 						<div clas="relative">
 							<div
-								class="w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[68%]"
+								class="hidden lg:block w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[68%]"
 							></div>
 							<div
-								class="w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[40%]"
+								class="hidden lg:block w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[40%]"
 							></div>
 							<div
-								class="w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[10%]"
+								class="hidden lg:block w-5 h-5 rounded-full bg-white absolute left-2/4 bottom-[10%]"
 							></div>
-							<div class="vertical-line ml-2"></div>
+							<div class="hidden lg:block vertical-line ml-2"></div>
 						</div>
-						<div class="flex flex-col gap-20 w-full">
-							<div class="flex items-center justify-between text-white w-full">
-								<aside class="flex flex-col gap-2">
-									<h2 class="text-xl font-semibold">
+						<div class="flex flex-col gap-10 w-full">
+							<div
+								class="flex flex-col-reverse md:flex-row items-center gap-16 justify-between text-white w-full"
+							>
+								<aside class="flex flex-col text-center md:text-left gap-2">
+									<h2 class="text-md xl:text-lg 2xl:text-xl font-semibold">
 										Muitos Esportes e Esportes de Aventura.
 									</h2>
-									<p class="text-lg w-6/12">
+									<p
+										class="text-xs lg:text-sm xl:text-md 2xl:text-lg lg:w-8/12 xl:w-7/12 2xl:w-6/12"
+									>
 										Pedra Azul e entorno têm vocação natural para esportes, em
 										especial esportes de aventura. Trilhas, corridas, rapel,
 										escaladas, alpinismo, parapente, bike, motos, cavalgadas,
@@ -141,22 +163,22 @@
 								<img
 									src="./img/parapente-coletivo.jpg"
 									alt="Imagem de pessoas praticando parapente"
-									class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
+									class="h-[14rem] w-[30rem] lg:h-[14rem] lg:w-[30rem] xl:h-[15rem] xl:w-[30rem] 2xl:h-[20rem] 2xl:w-[60rem] rounded-xl md:rounded-[50%] object-cover border-2"
 								/>
 							</div>
 							<div
-								class="flex items-center gap-[35rem] justify-between text-white w-full"
+								class="flex flex-col md:flex-row items-center gap-10 lg:gap-[13rem] xl:gap-[16rem] 2xl:gap-[35rem] justify-between text-white w-full"
 							>
 								<img
 									src="./img/Vinhos.jpg"
 									alt="Imagem de Esportes"
-									class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
+									class="h-[14rem] w-[30rem] lg:h-[14rem] lg:w-[30rem] xl:h-[15rem] xl:w-[30rem] 2xl:h-[20rem] 2xl:w-[60rem] rounded-xl md:rounded-[50%] object-cover border-2"
 								/>
-								<aside class="flex flex-col gap-2">
-									<h2 class="text-xl font-semibold">
+								<aside class="flex flex-col text-center md:text-left gap-2">
+									<h2 class="text-md xl:text-lg 2xl:text-xl font-semibold">
 										Pedra Azul é Convite Permanente para Uma Taça de Vinho.
 									</h2>
-									<p class="text-lg">
+									<p class="text-sm xl:text-md 2xl:text-lg">
 										A temperatura sempre amena e muito fria no inverno é um
 										convite permanente para celebração da vida e tomar vinho com
 										os amigos. Rosso, encarnado, sangre, rubro, tinto. Vinhos
@@ -166,12 +188,18 @@
 									</p>
 								</aside>
 							</div>
-							<div class="flex items-center justify-between text-white w-full">
-								<aside class="flex flex-col gap-2">
-									<h2 class="text-xl font-semibold">
+							<div
+								class="flex flex-col-reverse md:flex-row items-center justify-between gap-16 text-white w-full"
+							>
+								<aside class="flex flex-col text-center md:text-left gap-2">
+									<h2
+										class="md:w-6/12 text-md xl:text-lg 2xl:text-xl font-semibold"
+									>
 										Agroturismo. Centenas de Propriedades Familiares Rurais.
 									</h2>
-									<p class="text-lg w-6/12">
+									<p
+										class="text-xs lg:text-sm xl:text-md 2xl:text-lg lg:w-8/12 xl:w-7/12 2xl:w-6/12"
+									>
 										O agroturismo na Região de Pedra Azul, Venda Nova do
 										Imigrante e entorno é diversificado e inovador. Venda Nova
 										do Imigrante é a Capital Nacional do Agroturismo. Embutidos,
@@ -185,21 +213,23 @@
 								<img
 									src="./img/alimentos.jpg"
 									alt="Imagem de Alimentos do Naturais"
-									class="h-[20rem] w-[60rem] rounded-[50%] object-cover border-2"
+									class="h-[14rem] w-[30rem] lg:h-[14rem] lg:w-[30rem] xl:h-[15rem] xl:w-[30rem] 2xl:h-[20rem] 2xl:w-[60rem] rounded-xl md:rounded-[50%] object-cover border-2"
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="relative w-full bg-slate-900 px-40 text-white pt-48">
+			<section
+				class="relative w-full bg-slate-900 px-20 2xl:px-40 text-white pt-48 transition-all"
+			>
 				<div class="flex flex-col gap-4">
 					<h3 class="text-sm ml-28">O QUE FAZER ?</h3>
-					<h1 class="text-4xl font-semibold">
+					<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
 						OS LUGARES QUE OS VISITANTES MAIS AMAM!
 					</h1>
 				</div>
-				<div class="mt-16 flex justify-center items-center gap-16">
+				<div class="mt-16 flex justify-center items-center gap-10 2xl:gap-16">
 					<button
 						aria-label="Fotos à esquerda"
 						class="cursor-pointer border-0 hover:border rounded-full p-0 transition-all"
@@ -209,7 +239,7 @@
 							width="0.5em"
 							height="1em"
 							viewBox="0 0 12 24"
-							class="size-16 rotate-180"
+							class="size-10 md:size-16 rotate-180"
 						>
 							<path
 								fill="currentColor"
@@ -243,7 +273,7 @@
 						</div>
 					</div>
 					<div
-						class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						class="hidden md:block relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
 					>
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
@@ -267,7 +297,7 @@
 						</div>
 					</div>
 					<div
-						class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						class="hidden lg:block relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
 					>
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
@@ -291,7 +321,7 @@
 						</div>
 					</div>
 					<div
-						class="relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
+						class="hidden xl:block relative w-[18rem] h-[25rem] cursor-pointer rounded-lg group transition-all border-2"
 					>
 						<div
 							class="absolute w-full h-full flex justify-center items-center transition-all rounded-lg group-hover:backdrop-blur-sm"
@@ -323,7 +353,7 @@
 							width="0.5em"
 							height="1em"
 							viewBox="0 0 12 24"
-							class="size-16"
+							class="size-10 md:size-16"
 						>
 							<path
 								fill="currentColor"
@@ -336,40 +366,42 @@
 			</section>
 			<section
 				id="gallery"
-				class="relative w-full bg-slate-900 px-52 text-white pt-48"
+				class="relative w-full bg-slate-900 px-10 md:px-32 lg:px-44 xl:px-52 text-white pt-48 transition-all"
 			>
 				<div
 					class="flex flex-col items-center justify-center gap-4 w-full h-full text-white"
 				>
 					<div class="flex flex-col items-center gap-4">
 						<span>GALERIA DE FOTOS</span>
-						<h1 class="text-4xl font-semibold">
+						<h1
+							class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold"
+						>
 							CONTEMPLE A BELEZA DE PEDRA AZUL
 						</h1>
 					</div>
 					<div class="grid grid-cols-3 gap-8 w-full mt-20">
 						<div
-							class="w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/pedra-azul-hurb-2.jpg')] bg-cover hover:bg-center transition-all"
+							class="col-span-full md:col-span-1 w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/pedra-azul-hurb-2.jpg')] bg-cover hover:bg-center transition-all"
 						>
 							<span class="text-2xl font-semibold">Pousada Pedra Azul</span>
 						</div>
 						<div
-							class="col-span-2 w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Pedra-azul-entardecer.jpg')] bg-cover bg-center hover:bg-bottom transition-all"
+							class="col-span-full md:col-span-1 lg:col-span-2 w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Pedra-azul-entardecer.jpg')] bg-cover bg-center hover:bg-bottom transition-all"
 						>
 							<span class="text-2xl font-semibold">O Entardecer</span>
 						</div>
 						<div
-							class="w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Pedra-Azul-ES.jpg')] bg-cover bg-bottom hover:bg-top transition-all"
+							class="col-span-full md:col-span-1 w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Pedra-Azul-ES.jpg')] bg-cover bg-bottom hover:bg-top transition-all"
 						>
 							<span class="text-2xl font-semibold">Vista da Pousada</span>
 						</div>
 						<div
-							class="w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Piscinas-pedra-azul.jpg')] bg-cover bg-left hover:bg-right transition-all"
+							class="hidden w-full h-[25rem] lg:flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/Piscinas-pedra-azul.jpg')] bg-cover bg-left hover:bg-right transition-all"
 						>
 							<span class="text-2xl font-semibold">Piscinas Naturais</span>
 						</div>
 						<div
-							class="w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/pedra-azul-noite-estrelada.jpg')] bg-cover bg-right hover:bg-left transition-all"
+							class="col-span-3 lg:col-span-1 w-full h-[25rem] flex items-end justify-start pl-10 pb-10 select-none rounded-3xl bg-[url('./img/pedra-azul-noite-estrelada.jpg')] bg-cover bg-right hover:bg-left transition-all"
 						>
 							<span class="text-2xl font-semibold">Noite de Pedra Azul</span>
 						</div>
@@ -386,17 +418,17 @@
 			</section>
 			<section
 				id="impressions"
-				class="relative w-full bg-slate-900 px-40 text-white pt-48 pb-20"
+				class="relative w-full bg-slate-900 px-10 md:px-36 lg:px-38 xl:px-40 text-white pt-48 pb-20"
 			>
-				<div class="flex flex-col gap-4">
-					<h3 class="text-sm ml-28">AINDA EM DÚVIDA?</h3>
-					<h1 class="text-4xl font-semibold">
+				<div class="flex flex-col items-center md:items-start gap-4">
+					<h3 class="text-sm md:ml-28">AINDA EM DÚVIDA?</h3>
+					<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
 						VEJA AS IMPRESSÕES DE PESSOAS QUE VISITARAM!
 					</h1>
 				</div>
-				<div class="flex items-center justify-between mt-20 px-2">
+				<div class="flex items-center gap-4 2xl:gap-0 justify-between mt-20 px-2">
 					<div
-						class="flex flex-col gap-10 bg-slate-950/35 w-[30rem] rounded-3xl shadow-md px-6 py-4"
+						class="flex flex-col gap-10 bg-slate-950/35 max-w-[30rem] rounded-3xl shadow-md px-6 py-4"
 					>
 						<div class="flex gap-1 py-3">
 							<svg
@@ -460,7 +492,7 @@
 								/>
 							</svg>
 						</div>
-						<div class="w-full text-xl text-white">
+						<div class="w-full text-sm 2xl:text-xl text-white">
 							<p class="">
 								"Ut fermentum sodales odio ac venenatis. Phasellus egestas vitae
 								arcu a vestibulum. Praesent a tincidunt nisi, vitae faucibus
@@ -477,15 +509,15 @@
 								/>
 							</div>
 							<div class="flex flex-col py-2">
-								<span class="text-lg font-bold text-white">Jackie Chan</span>
-								<span class="font-semibold text-white"
+								<span class="text-sm xl:text-lg font-bold text-white">Jackie Chan</span>
+								<span class="text-xs lg:text-sm font-semibold text-white"
 									>20 de Fevereiro de 2017</span
 								>
 							</div>
 						</div>
 					</div>
 					<div
-						class="flex flex-col gap-10 bg-slate-950/35 w-[30rem] rounded-3xl shadow-md px-6 py-4"
+						class="hidden md:flex flex-col gap-10 bg-slate-950/35 max-w-[30rem] rounded-3xl shadow-md px-6 py-4"
 					>
 						<div class="flex gap-1 py-3">
 							<svg
@@ -549,7 +581,7 @@
 								/>
 							</svg>
 						</div>
-						<div class="w-full text-xl text-white">
+						<div class="w-full text-sm 2xl:text-xl text-white">
 							<p class="">
 								"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 								dignissim mattis auctor. Integer tempor rhoncus enim et
@@ -566,15 +598,15 @@
 								/>
 							</div>
 							<div class="flex flex-col py-2">
-								<span class="text-lg font-bold text-white">Fulano Silva</span>
-								<span class="font-semibold text-white"
+								<span class="text-sm xl:text-lg font-bold text-white">Fulano Silva</span>
+								<span class="text-xs lg:text-sm font-semibold text-white"
 									>14 de Agosto de 2024</span
 								>
 							</div>
 						</div>
 					</div>
 					<div
-						class="flex flex-col gap-10 bg-slate-950/35 w-[30rem] rounded-3xl shadow-md px-6 py-4"
+						class="hidden lg:flex flex-col gap-10 bg-slate-950/35 max-w-[30rem] rounded-3xl shadow-md px-6 py-4"
 					>
 						<div class="flex gap-1 py-3">
 							<svg
@@ -638,7 +670,7 @@
 								/>
 							</svg>
 						</div>
-						<div class="w-full text-xl text-white">
+						<div class="w-full text-sm 2xl:text-xl text-white">
 							<p>
 								"Donec sed risus at ipsum tincidunt molestie. Vestibulum vitae
 								ullamcorper lorem. Aenean sed sapien quis felis semper
@@ -655,10 +687,10 @@
 								/>
 							</div>
 							<div class="flex flex-col py-2">
-								<span class="text-lg font-bold text-white"
+								<span class="text-sm xl:text-lg font-bold text-white"
 									>Michael Jackson</span
 								>
-								<span class="font-semibold text-white"
+								<span class="text-xs lg:text-sm font-semibold text-white"
 									>12 de Fevereiro de 2005</span
 								>
 							</div>
@@ -715,12 +747,12 @@
 				>
 					<div class="flex flex-col items-center gap-4">
 						<span>VAMOS LÁ</span>
-						<h1 class="text-4xl font-semibold">
+						<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
 							PREPARADO? RESERVE SUA VISITA!
 						</h1>
 					</div>
 					<div class="w-full flex items-center justify-center mt-20">
-						<form class="w-2/12 flex flex-col gap-5">
+						<form class="xl:w-2/12 flex flex-col gap-5">
 							<input
 								type="text"
 								placeholder="Seu Nome"
@@ -745,13 +777,13 @@
 				</div>
 			</section>
 			<footer
-				class="w-full h-96 flex gap-40 justify-between px-10 py-14 bg-slate-900 text-white"
+				class="w-full md:h-96 flex flex-col md:flex-row gap-12 md:gap-40 justify-between px-10 py-14 bg-slate-900 text-white transition-all"
 			>
 				<div>
 					<img
 						src="./img/pedra-azul-logo.png"
 						alt="Logo"
-						class="size-30"
+						class="size-32 md:size-auto"
 					/>
 				</div>
 				<div class="flex flex-col gap-8 w-full">
@@ -762,7 +794,7 @@
 							width="1em"
 							height="1em"
 							viewBox="0 0 256 256"
-							class="size-7"
+							class="size-4 md:size-7"
 						>
 							<path
 								fill="currentColor"
@@ -777,7 +809,7 @@
 							width="1em"
 							height="1em"
 							viewBox="0 0 512 512"
-							class="size-7"
+							class="size-5 md:size-7"
 						>
 							<path
 								fill="none"
@@ -802,7 +834,7 @@
 							href="https://maps.app.goo.gl/edi1h7dYyc7zJujw8"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="max-w-[22rem]"
+							class="text-sm md:text-auto md:max-w-[22rem]"
 							>BR 262 - KM 89 - Rota do Lagarto - Pedra Azul - Domingos
 							Martins/ES</a
 						>
@@ -819,7 +851,7 @@
 								width="1em"
 								height="1em"
 								viewBox="0 0 24 24"
-								class="size-7"
+								class="size-4 md:size-7"
 							>
 								<g
 									fill="none"
@@ -849,7 +881,7 @@
 								width="1em"
 								height="1em"
 								viewBox="0 0 24 24"
-								class="size-7"
+								class="size-4 md:size-7"
 							>
 								<g
 									fill="none"
@@ -876,7 +908,7 @@
 								width="1em"
 								height="1em"
 								viewBox="0 0 24 24"
-								class="size-7"
+								class="size-4 md:size-7"
 							>
 								<g
 									fill="none"
@@ -904,12 +936,9 @@
 					<a href="#todo">O que fazer</a>
 					<a href="#impressions">Impressões</a>
 				</div>
-				<div></div>
-				<div></div>
 			</footer>
 		</div>
 
 		<!-- CDN Tailwindcss -->
-		<script src="https://cdn.tailwindcss.com"></script>
 	</body>
 </html>
