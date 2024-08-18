@@ -21,7 +21,12 @@
 			href="./styles/main.css"
 		/>
 
-		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="img/favicon.ico"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
 		<div
@@ -239,15 +244,19 @@
 				</div>
 			</section>
 			<section
-				class="relative w-full bg-slate-900 px-20 2xl:px-40 text-white pt-48 transition-all"
+				class="relative w-full bg-slate-900 px-4 md:px-20 2xl:px-40 text-white pt-28 md:pt-48 transition-all"
 			>
 				<div class="flex flex-col gap-4">
 					<h3 class="text-sm ml-28">O QUE FAZER ?</h3>
-					<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
+					<h1
+						class="text-center md:text-left text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold"
+					>
 						OS LUGARES QUE OS VISITANTES MAIS AMAM!
 					</h1>
 				</div>
-				<div class="mt-16 flex justify-center items-center gap-10 2xl:gap-16">
+				<div
+					class="mt-16 flex justify-center items-center gap-4 md:gap-10 2xl:gap-16"
+				>
 					<button
 						aria-label="Fotos à esquerda"
 						class="cursor-pointer border-0 hover:border rounded-full p-0 transition-all"
@@ -384,7 +393,7 @@
 			</section>
 			<section
 				id="gallery"
-				class="relative w-full bg-slate-900 px-10 md:px-32 lg:px-44 xl:px-52 text-white pt-48 transition-all"
+				class="relative w-full bg-slate-900 px-10 md:px-32 lg:px-44 xl:px-52 text-white pt-28 md:pt-48 transition-all"
 			>
 				<div
 					class="flex flex-col items-center justify-center gap-4 w-full h-full text-white"
@@ -392,7 +401,7 @@
 					<div class="flex flex-col items-center gap-4">
 						<span>GALERIA DE FOTOS</span>
 						<h1
-							class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold"
+							class="text-center md:text-left text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold"
 						>
 							CONTEMPLE A BELEZA DE PEDRA AZUL
 						</h1>
@@ -436,11 +445,13 @@
 			</section>
 			<section
 				id="impressions"
-				class="relative w-full bg-slate-900 px-10 md:px-36 lg:px-38 xl:px-40 text-white pt-48 pb-20"
+				class="relative w-full bg-slate-900 px-10 md:px-36 lg:px-38 xl:px-40 text-white pt-28 md:pt-48 pb-20"
 			>
 				<div class="flex flex-col items-center md:items-start gap-4">
 					<h3 class="text-sm md:ml-28">AINDA EM DÚVIDA?</h3>
-					<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold">
+					<h1
+						class="text-center md:text-left text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold"
+					>
 						VEJA AS IMPRESSÕES DE PESSOAS QUE VISITARAM!
 					</h1>
 				</div>
@@ -966,5 +977,6 @@
 		</div>
 
 		<!-- CDN Tailwindcss -->
+		<script src="https://cdn.tailwindcss.com"></script>
 	</body>
 </html>
