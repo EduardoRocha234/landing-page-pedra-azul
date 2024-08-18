@@ -6,3 +6,4 @@ Este é um projeto que fiz para um trabalho da faculdade na matéria de Ferramen
 
 - Implementar JS nos botões
 - melhorar responsividade
+- adicionar animaçöes de transições
